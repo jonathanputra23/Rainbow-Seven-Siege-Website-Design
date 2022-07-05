@@ -1,0 +1,115 @@
+input[type=text],input[type=password],  input[type=email], input[type=number],input[type=checkbox],  select, textarea{
+    width: 100%;
+    margin: auto;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: ropasans;
+  }
+
+body{
+  margin: 0;
+  background-image: url(../Assets/pobg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  font-size: 5vw;
+  text-align: center;
+  font-family: BebasNeue;
+  color: white;
+}
+
+#agree{
+  font-family: BebasNeue;
+
+    text-align: center;
+    margin-left: auto;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: BebasNeue;
+}
+  
+#buttong{
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  font-family: BebasNeue;
+
+  }
+  
+.containerpreorder {
+  width: 70%;
+  border-radius: 5px;
+  background: rgba(228, 228, 228, 0.9);
+  padding: 20px;
+  margin: auto;
+}
+
+.label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inputfield {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  font-family: BebasNeue;
+  padding: 1%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  margin-top:5%;
+  font-size: 30px;
+}
+
+footer img#ubipost{
+  max-width: 15%;
+}
+
+footer img#logor7{
+  max-width: 15%;
+}
+@media screen and (max-width: 600px) {
+  .label, .inputfield, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  footer{
+    font-size: 15px;
+  }
+  
+  footer img#ubipost{
+    max-width: 30%;
+  }
+  
+  footer img#logor7{
+    max-width: 30%;
+  }
+
+  h1{
+    margin-top: 10%;
+  }
+}

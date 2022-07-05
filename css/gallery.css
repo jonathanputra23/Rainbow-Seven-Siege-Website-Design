@@ -1,0 +1,307 @@
+/*Operators*/
+body {
+	background-image: url('../Assets/bgop.png');
+	margin: 0;
+	height: 100%; 
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	font: 18px/36px 'BebasNeue';
+	font-size: 80px;
+	color: #fff;
+	margin-top: 5%;
+	text-align: center;
+	padding: 20px;
+	text-shadow: 0 0 3px #e2f2ff, 0 0 5px #e2f2ff;
+	/*text-shadow: 3px 5px 2px rgb(206, 198, 198);*/
+}
+
+.container_gal {
+	position: absolute;
+	max-width: 60%;
+	width: 100%;
+	background-color: rgb(32, 30, 30, 0.7);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*padding-left: 20px;*/
+	box-shadow: 0 0 3px 3px rgba(190, 190, 190, 0.5);
+	border-radius: 5px;
+	float: left;
+	/*margin-left: 50px;*/
+	margin-top: 50px;
+	z-index: 1;
+}
+
+.clear {
+	clear: both;
+}
+
+.gallery {
+	margin: auto;
+	/*max-width: 100%;*/
+}
+
+.gallery a {
+	float: left;
+}
+
+.gallery img {
+	/*max-width: 100%;*/
+	height: auto;
+    transition: 0.3s;
+	width: 15%;
+	margin-right: 3px;
+	margin-left: 15px;
+}
+
+.gallery img:hover {
+	transform: scale(1.25);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+.gambar {
+	float: right;
+	position: relative;
+	/*max-width: 50%;
+	width: 100%;*/
+	margin-right: 50px;
+	z-index: 1;
+}
+
+/*.gambar img{
+	margin-left: 30%;
+	max-width: 100%;
+	width: 50%;
+	height: auto;
+}*/
+
+.container_info {
+	width: 100%;
+	background-color: rgba(32, 30, 30, 0.884);
+	box-shadow: 0 0 3px 3px rgba(190, 190, 190, 0.562);
+	border-radius: 5px;
+	float: left;
+	/*margin-left: 50px;*/
+	margin-top: 30%;
+	z-index: -1;
+	position: absolute;
+
+}
+
+.info {
+	position: relative;
+	margin-top: 20px;
+}
+
+h2 {
+	font-family: ropasans;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+}
+
+.name {
+	font-family: ropasans;
+	font-size: 45px;
+	color: rgb(255, 255, 255);
+	margin-right: 10px;
+}
+
+.job {
+	font-family: ropasans;
+	font-size: 23px;
+	color: rgb(255, 255, 255);
+}
+
+.flag {
+	margin-right: 10px;
+}
+
+.sideatt{
+	text-shadow: 0 0 3px #ff0000, 0 0 5px #ff0000;
+}
+
+.sidedeff{
+	text-shadow: 0 0 3px #2196f3, 0 0 5px #2196f3;
+}
+
+.line {
+	border: none;
+	height: 0.5px;
+	background: #ddd;
+}
+
+.linee {
+	border: none;
+	height: 0.5px;
+	background: #ddd;
+	margin-right: 450px;
+}
+
+/*.role {
+	margin-right: 450px;
+}*/
+
+.roleinfo {
+	font-family: ibmitalic;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+.stat {
+	margin: auto;
+}
+
+.armor {
+	float: left;
+	margin-right: 120px;
+}
+.speed {
+	float: left;
+	margin-right: 120px;
+}
+.difficulty {
+	float: left;
+}
+
+.cir1 {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-bottom: 25px;
+}
+
+.cir2 {
+	float: left;
+	background-color: rgb(129, 129, 129);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-bottom: 25px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	h1 {
+		padding: 0;
+		margin-top: 20%;
+	}
+
+	.container_gal{
+		max-width: 100%;
+		width: 100%;
+		margin-top: 250px;
+		margin-left: 0;
+	}
+
+	.container_info {
+		margin-top: 550px;
+	}
+
+	.linee {
+		border: none;
+		height: 0.5px;
+		background: #ddd;
+		margin-right: 150px;
+	}
+
+	@media screen and (max-width: 800px) {
+		.container_info {
+			margin-top: 500px;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		.container_info {
+			margin-top: 500px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.container_gal {
+			margin-top: 200px;
+		}
+
+		.gambar img{
+			margin-left: 70px;
+			max-width: 100%;
+			width: 80%;
+			height: auto;
+		}
+
+		.container_info {
+			margin-top: 400px;
+		}
+
+		h2, .job, .roleinfo {
+			font-size: 80%;
+		}
+
+		.name {
+			font-size: 150%;
+		}
+	}
+}
+.footer {
+	background-color: #333;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-family: BebasNeue;
+	padding: 3px;
+	position: absolute;
+	margin-top: 1000px;
+  }
+  
+  .footer img#ubipost{
+	max-width: 10%;
+  }
+  
+  .footer img#logor7{
+	max-width: 15%;
+  }
+  
+  @media screen and (max-width: 770px) {
+	.footer img#ubipost{
+	  max-width: 30%;
+	}
+	
+	.footer img#logor7{
+	  max-width: 30%;
+	}
+  
+	.footer {
+	  position: absolute;
+	  margin-top: 1000px;
+	  font-size: 17px;
+	}
+  }
+@media screen and (max-width: 1200px) {
+	.gambar {
+		z-index: -2;
+	}
+
+	.armor {
+		float: left;
+		margin-right: 90px;
+	}
+	.speed {
+		float: left;
+		margin-right: 90px;
+	}
+	.difficulty {
+		float: left;
+	}
+	
+}

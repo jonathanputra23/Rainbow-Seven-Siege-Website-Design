@@ -1,0 +1,150 @@
+head{
+  background-color: #404040;
+}
+body {
+  margin: 0;
+  background-color: #D3D3D3;
+  background-image:
+    url("../Assets/homebg.jpg");
+    background-size: cover;
+}
+#display-image{
+  width: 100%;
+}
+
+h1{
+  font-size: 5vw;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: BebasNeue;
+}
+
+h2{
+  font-size: 3vw;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-family: BebasNeue;
+}
+
+.column img{
+  width: 100%;
+}
+.container{
+  margin-top: 3%;
+}
+#container {
+  position: relative;
+  width: 100%;
+}
+
+#container img {
+  width: 100%;
+  height: auto;
+}
+
+#container .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#container .btn:hover {
+  background-color: black;
+}
+.column {
+  position: relative;
+  float: left;
+  width: 49%;
+  padding: 0.5%;
+}
+
+.column img:hover{
+  transform: scale(1.01);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+.column .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  font-family: ropasans;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: BebasNeue;
+  padding: 10px;
+}
+
+footer p{
+  margin-top: 2%;
+}
+footer img#ubipost{
+  max-width: 15%;
+}
+
+footer img#logor7{
+  max-width: 15%;
+}
+
+@media screen and (max-width: 770px) {
+  footer{
+    font-size: 15px;
+  }
+  footer img#ubipost{
+    max-width: 30%;
+  }
+  
+  footer img#logor7{
+    max-width: 30%;
+  }
+
+  #display-image{
+    padding-top: 6%;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .column .btn{
+    padding: 7px 8px;
+    font-size: 8px;
+  }
+  #container .btn{
+    padding: 10px 10px;
+    font-size: 10px;
+  }
+}
